@@ -8,10 +8,10 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('MoviesCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MoviesCtrl', function ($scope) {
+		$scope.movieList = [{
+			title: '** Lava - Please watch',
+			description: 'Pixar Short FIlm: Lava',
+			category: 'Entertainment'
+		}];
   });

@@ -1,1 +1,17 @@
-<p>This is the movies view.</p>
+<!--
+<div ui-grid="gridOptions1" ui-grid-pagination class="grid"></div>
+-->
+<table class="table table-striped">
+  <thead>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Category</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="movie in movieList">
+      <td>{{ movie.title }}</td>
+      <td>{{ movie.description }}</td>
+      <td>{{ movie.category }}</td>
+    </tr>
+  </tbody>
+</table>

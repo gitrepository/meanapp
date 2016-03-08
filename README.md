@@ -103,7 +103,9 @@ RTB10
 RTB11
 #24 Basic App with Movie MVC. Not connected to Service yet.
 
-
+RTB12
+#25 Hooking up Client to Server (View Movie List)
+#26 Using restangular to 
 
 
 
