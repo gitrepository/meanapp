@@ -105,23 +105,12 @@ RTB11
 
 RTB12
 #25 Hooking up Client to Server (View Movie List)
-#26 Using restangular to 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#26 Using restangular (on client) to invoke RESTful services on the server.
+	Restangular is an AngularJS service that simplifies common GET, POST, DELETE, and UPDATE requests.
+	It's a perfect fit for any WebApp that consumes data from a RESTful API.
+#27 Use bower to install restangular package under client.
+	bower install --save restangular
+#28 Add bower_component -> restangular to the main layout (client/app/index.html)
 
 
 
