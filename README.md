@@ -49,4 +49,7 @@ RTB03
 RTB04
 #11 Model: Creating models /server/models/*.*
 
+RTB05
+#12 Model Index: require('/config/models')
+#13 Load Models in the server
 

@@ -24,6 +24,10 @@ app.use(function(req, res, next) {
 mongoose.connect('mongodb://localhost/meanapp');
 mongoose.connection.once('open', function() {
   
+  // Load the models & assign them app 
+  //-so that they can be refered elsewhere (like in controllers)
+  app.models = require('./config/models');
+
   app.use('/', function(req, res, next){
     res.send("Hello World");
     //Signal express that's it's ok to go to next middleware request
