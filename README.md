@@ -59,6 +59,8 @@ RTB05
 RTB06
 #14 Controllers: Create Controllers /server/controllers/*.*
 #15 REST - ResourceJS: Use Express library (resourcejs) that reflects a Mongoose model to a RESTful interface
+  npm install resourcejs - in server folder
+  
   // Create the REST resource. 
   Resource(app, '', 'resourceURL', ResourceModel).rest();
   The following rest interface would then be exposed.
@@ -76,6 +78,10 @@ RTB07: Bug Fix
   if the '/' is used no other server request would be catered as they are all extensions of '/*'
   if the '/hello' is used no other server request ('/hello/wsx') would be catered as they are all extensions of '/hello/*'
 
+
+RTB08
+#17 Controller Index: require('/config/routes')
+#18 Load Routes/Controllers in the server so as to access the REST services
 
 
 

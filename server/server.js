@@ -28,6 +28,12 @@ mongoose.connection.once('open', function() {
   //-so that they can be refered elsewhere (like in controllers)
   app.models = require('./config/models');
 
+  // Load the routes.
+  var routes = require('./config/routes');
+  _.each(routes, function(controller, route) {
+    app.use(route, controller(app, route));
+  });
+
   app.use('/hello', function(req, res, next){
     res.send("Hello World");
     //Signal express that's it's ok to go to next middleware request
