@@ -25,7 +25,10 @@ mongoose.connect('mongodb://localhost/meanapp');
 mongoose.connection.once('open', function() {
   
   app.use('/', function(req, res, next){
-    res.send("Hello World");  
+    res.send("Hello World");
+    //Signal express that's it's ok to go to next middleware request
+    //If not there, the browser will hang
+    next();
   })
   
   console.log('Listening on port 3000...');
