@@ -28,7 +28,7 @@ mongoose.connection.once('open', function() {
   //-so that they can be refered elsewhere (like in controllers)
   app.models = require('./config/models');
 
-  app.use('/', function(req, res, next){
+  app.use('/hello', function(req, res, next){
     res.send("Hello World");
     //Signal express that's it's ok to go to next middleware request
     //If not there, the browser will hang

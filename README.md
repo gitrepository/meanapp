@@ -46,12 +46,15 @@ RTB03
    Listen to the server
 #10 Run the server: Cd into the server folder, node server
 
+
 RTB04
 #11 Model: Creating models /server/models/*.*
+
 
 RTB05
 #12 Model Index: require('/config/models')
 #13 Load Models in the server
+
 
 RTB06
 #14 Controllers: Create Controllers /server/controllers/*.*
@@ -68,7 +71,10 @@ RTB06
   /resourceURL/:id - (DELETE) - Deletes an existing resource.
 
 
-
+RTB07: Bug Fix
+#16 app.use('/') changed to app.use('/hello')
+  if the '/' is used no other server request would be catered as they are all extensions of '/*'
+  if the '/hello' is used no other server request ('/hello/wsx') would be catered as they are all extensions of '/hello/*'
 
 
 
