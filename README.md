@@ -46,3 +46,7 @@ RTB03
    Listen to the server
 #10 Run the server: Cd into the server folder, node server
 
+RTB04
+#11 Model: Creating models /server/models/*.*
+
+
