@@ -53,3 +53,54 @@ RTB05
 #12 Model Index: require('/config/models')
 #13 Load Models in the server
 
+RTB06
+#14 Controllers: Create Controllers /server/controllers/*.*
+#15 REST - ResourceJS: Use Express library (resourcejs) that reflects a Mongoose model to a RESTful interface
+  // Create the REST resource. 
+  Resource(app, '', 'resourceURL', ResourceModel).rest();
+  The following rest interface would then be exposed.
+
+  /resourceURL - (GET) - List all resources.
+  /resourceURL - (POST) - Create a new resource.
+  /resourceURL/:id - (GET) - Get a specific resource.
+  /resourceURL/:id - (PUT) - Replaces an existing resource.
+  /resourceURL/:id - (PATCH) - Updates an existing resource.
+  /resourceURL/:id - (DELETE) - Deletes an existing resource.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
