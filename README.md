@@ -101,7 +101,7 @@ RTB10
 	yo angular:route movies
 
 RTB11
-#24 Customizing the Client with the newly created Movies view
+#24 Basic App with Movie MVC. Not connected to Service yet.
 
 
 
