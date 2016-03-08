@@ -1,3 +1,6 @@
+server/node_modules
+
+
 # OS
 # ===========
 .DS_Store
@@ -18,7 +21,6 @@ coverage/
 
 # MEAN.js app and assets
 # ======================
-server/node_modules
 uploads
 modules/users/client/img/profile/uploads
 config/env/local.js

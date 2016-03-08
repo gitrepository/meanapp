@@ -84,7 +84,15 @@ RTB08
 #18 Load Routes/Controllers in the server so as to access the REST services
 
 
-
+RTB09
+#20 Client: Building Client side (Front end)
+#21 mkdir /client in /meanapp (project root) folder
+#22 Using Scafolding tool Yeoman to generate skeliton of the client app
+	mkdir client && cd client
+	yo angular
+	Ctrl (exit out of yo angular)
+	grunt serve (start the server @ localhost:9000) 
+	app.js: Client Side bootstrap file (/client/app/app.js)
 
 
 
