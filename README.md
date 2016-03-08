@@ -37,3 +37,10 @@ RTB02
    npm cache clean
    npm install --save lodash
 
+
+RTB03
+#07 Wrinting API first (Server side code)
+#08 server.js: Server Side bootstrap file
+#09 setup server side app
+   Express is the app which serves the request
+   Listen to the server
