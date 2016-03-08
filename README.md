@@ -39,7 +39,7 @@ RTB02
 
 
 RTB03
-#07 Wrinting API first (Server side code)
+#07 Writing API first (Server side code)
 #08 server.js: Server Side bootstrap file
 #09 setup server side app
    Express is the app which serves the request
@@ -87,17 +87,21 @@ RTB08
 RTB09
 #20 Client: Building Client side (Front end)
 #21 mkdir /client in /meanapp (project root) folder
-#22 Using Scafolding tool Yeoman to generate skeliton of the client app
+#22 Using Scaffolding tool Yeoman to generate skeleton of the client app
 	mkdir client && cd client
 	yo angular
 	Ctrl (exit out of yo angular)
 	grunt serve (start the server @ localhost:9000) 
-	app.js: Client Side bootstrap file (/client/app/app.js)
+	app.js: Client Side bootstrap file (/client/app/scripts/app.js)
+	indes.html (/client/app/index.html)
 
 
+RTB10
+#23 Create Route: (Movies Route) inside client folder
+	yo angular:route movies
 
-
-
+RTB11
+#24 Customizing the Client with the newly created Movies view
 
 
 
