@@ -44,3 +44,5 @@ RTB03
 #09 setup server side app
    Express is the app which serves the request
    Listen to the server
+#10 Run the server: Cd into the server folder, node server
+
