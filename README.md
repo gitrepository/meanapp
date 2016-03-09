@@ -1,6 +1,6 @@
 # Mean Stack: Movie List (CRUD)
 
-RTB01
+RTB01: SERVER APIs
 #01 Install NodeJS
 #02 Install MongoDB
 #03 NPM Global Installation
@@ -84,7 +84,7 @@ RTB08
 #18 Load Routes/Controllers in the server so as to access the REST services
 
 
-RTB09
+RTB09: CLIENT Code
 #20 Client: Building Client side (Front end)
 #21 mkdir /client in /meanapp (project root) folder
 #22 Using Scaffolding tool Yeoman to generate skeleton of the client app
@@ -133,3 +133,32 @@ RTB14: COMPETE CRUD
 RTB15
 #33 Angular Directive: Directive provides the ability to create new HTML elements/tags etc.
 	<youtube> directive to play videos (not just you-tube)
+
+
+RTB16: The END
+#34 Look Data: Adding lookup data service call
+#35 Summary
+	MEAN Stack: It makes use of MongoDB, Express.js, Angular.js, and Node.js
+	
+	API Firts: Implementing server side code
+		Node		: Is an open-source, cross-platform runtime environment for developing server-side Web applications.
+		Exprees	: Is a Node.js web application server framework which handle Serverside Request & Responses.
+		MongoDB	: Is a cross-platform document-oriented NoSQL database.
+		
+		mongoose				: Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment.
+		resourcejs			: A simple Express library to reflect Mongoose models to a REST interface.
+		body-parser			: Node.js body parsing middleware. It's parsing utility.
+		method-override : Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
+		lodash					: Lodash makes JavaScript easier by taking the hassle out of working with arrays,
+											numbers, objects, strings.
+
+	Client/ Front End: Implementing Client Interface code.
+		AngularJS	: Is an open-source web application framework built to develop single-page applications (SPA). Brings MVC framework to 												-javascript
+		Yeoman		: Is a scaffolding tool. Used to generate basic angular app (yo angular) + generate MVC routes (yo angular:route movie-add)
+		Bower			: Is another Package Manager. Convenient to install Front end related dependencies (like Bootstrap, Angular etc)
+		Grunt			: Is a Javascript Task runner (grunt serve)
+		
+		angular-ui-router	: Angular routing using angular-ui-router (ui-view) instead of angular-router (ng-view)
+		restangular				: Restangular is an AngularJS service that simplifies common GET, POST, DELETE, and UPDATE requests with a minimum of 												-client code. It's a perfect fit for any WebApp that consumes data from a RESTful API.
+		
+		

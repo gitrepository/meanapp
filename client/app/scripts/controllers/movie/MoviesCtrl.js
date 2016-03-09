@@ -9,6 +9,7 @@
  */
 angular.module('clientApp')
   .controller('MoviesCtrl', function ($scope, Movie) {
+		//'Movie' corresponds to factory: Movie
     Movie.getList().then(function(movies) {
       angular.forEach(movies, function(movie) {
 				//In ordere to play youTube videos in embeded mode

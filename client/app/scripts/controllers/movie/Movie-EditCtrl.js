@@ -11,8 +11,9 @@ angular.module('clientApp')
   .controller('Movie-EditCtrl', function(
     $scope,
     $stateParams,
+    $location,
     Movie,
-    $location
+		CategoryRef
   ) {
     $scope.editMovie = true;
     $scope.movie = {};
@@ -24,4 +25,9 @@ angular.module('clientApp')
         });
       };
     });
+	
+		CategoryRef.getList().then(function(cats) {
+      $scope.categories = cats;
+    });
+	
   });

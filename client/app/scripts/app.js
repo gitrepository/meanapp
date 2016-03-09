@@ -62,6 +62,18 @@ angular
     return MovieRestangular.service('movie');
   })
 
+  .factory('CategoryRefRestangular', function(Restangular) {
+    return Restangular.withConfig(function(RestangularConfigurer) {
+      RestangularConfigurer.setRestangularFields({
+        id: '_id'
+      });
+    });
+  })
+
+  .factory('CategoryRef', function(CategoryRefRestangular) {
+    return CategoryRefRestangular.service('categoryRef');
+  })
+
   .directive('youtube', function() {
     return {
       restrict: 'E',

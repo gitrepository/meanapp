@@ -10,13 +10,19 @@
 angular.module('clientApp')
   .controller('Movie-AddCtrl', function(
     $scope,
-    Movie,
-    $location
+    $location,
+		Movie,
+		CategoryRef
   ) {
     $scope.movie = {};
     $scope.saveMovie = function() {
-      Movie.post($scope.movie).then(function() {
+      Movie1.post($scope.movie).then(function() {
         $location.path('/movies');
       });
     };
+  
+		CategoryRef.getList().then(function(cats) {
+      $scope.categories = cats;
+    });
+	
   });
