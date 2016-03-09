@@ -122,11 +122,12 @@ RTB13: Code Cleanup
 	add (if not added) bower_components/angular-ui-router/release/angular-ui-router.js
 
 
-RTB14
-#31 Adding other MOVIE CRUD routes: movie-add, movie-view, movie-update, movie-delete
+RTB14: COMPETE CRUD
+#31 CRUD: Setting up a complete CRUD.
+#32 Adding other MOVIE CRUD routes: movie-add, movie-view, movie-update, movie-delete
 	yo angular:route movie-add 
 		(1)movie-add.html	: view file
-		(2)movie-add.js		: controller
+		(2)movie-add.js		: controller (Movie-AddCtrl)
 		(3)app.js					: create a route for ADD /movie-add
 		
 	
