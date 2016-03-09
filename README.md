@@ -113,8 +113,11 @@ RTB12
 #28 Add bower_component -> restangular to the main layout (client/app/index.html)
 
 
-
-
+RTB13: Code Cleanup
+#29 Rename the controllers
+#30 Change from angular-route to angular-ui-route
+	bower install --save angular-ui-router
+	add (if not added) bower_components/angular-ui-router/release/angular-ui-router.js
 
 
 

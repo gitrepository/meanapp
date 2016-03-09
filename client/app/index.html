@@ -30,7 +30,7 @@
       </ul>
       <h3 class="text-muted">App Header Title</h3>
     </div>
-    <div ng-view=""></div>
+    <div ui-view></div>
   </div>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -38,16 +38,16 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/restangular/dist/restangular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/movies.js"></script>
+        <script src="scripts/controllers/MainCtrl.js"></script>
+        <script src="scripts/controllers/movie/MoviesCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

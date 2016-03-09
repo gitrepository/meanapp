@@ -9,36 +9,27 @@
  * Main module of the application.
  */
 angular
-  
-	.module('clientApp', [
-    'ngRoute',
-		'restangular'
-  ])
-  
-	.config(function ($routeProvider, RestangularProvider) {
+  .module('clientApp', ['restangular', 'ui.router'])
+  .config(function($stateProvider, $urlRouterProvider, RestangularProvider) {
+
     // Set the base URL for Restangular.
     RestangularProvider.setBaseUrl('http://localhost:3000');
 
-		$routeProvider
-      .when('/', {
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+      .state('home', {
+        url: '/',
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        controller: 'MainCtrl'
       })
-      .when('/movies', {
-        templateUrl: 'views/movies.html',
-        controller: 'MoviesCtrl',
-        controllerAs: 'movies'
-      })
-      .otherwise({
-        redirectTo: '/'
+      .state('movies', {
+        url: '/movies',
+        templateUrl: 'views/movie/movies.html',
+        controller: 'MoviesCtrl'
       });
   })
 
-	//MovieRestangular Factory:
-	//Restangular expects id and NOT _id.
-	//This factory changes _id to id
-	.factory('MovieRestangular', function(Restangular) {
+  .factory('MovieRestangular', function(Restangular) {
     return Restangular.withConfig(function(RestangularConfigurer) {
       RestangularConfigurer.setRestangularFields({
         id: '_id'
@@ -46,9 +37,6 @@ angular
     });
   })
 
-	//Movie Factory: 
-	//Creates a Movie which has been _id changed to id
   .factory('Movie', function(MovieRestangular) {
     return MovieRestangular.service('movie');
   });
-
