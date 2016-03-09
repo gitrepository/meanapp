@@ -26,6 +26,27 @@ angular
         url: '/movies',
         templateUrl: 'views/movie/movies.html',
         controller: 'MoviesCtrl'
+      })
+      .state('movie-add', {
+        url: '/movie-add',
+        templateUrl: 'views/movie/movie-add.html',
+        controller: 'Movie-AddCtrl'
+      })
+		
+      .state('movie-view', {
+        url: '/movie-view/:id',
+        templateUrl: 'views/movie/movie-view.html',
+        controller: 'Movie-ViewCtrl'
+      })
+      .state('movie-edit', {
+        url: '/movie-edit/:id',
+        templateUrl: 'views/movie/movie-edit.html',
+        controller: 'Movie-EditCtrl'
+      })
+      .state('movie-delete', {
+        url: '/movie-delete/:id',
+        templateUrl: 'views/movie/movie-delete.html',
+        controller: 'Movie-DeleteCtrl'
       });
   })
 

@@ -16,6 +16,8 @@ angular.module('clientApp')
           movie.url = movie.url.replace('watch?v=', 'embed/');
         }
       });
+			//For some reason $scope.movies doesn't work.
+			//Looks like there is a conflict with file name (movies.html)
       $scope.movieList = movies;
     });
   });

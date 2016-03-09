@@ -1,3 +1,5 @@
+<a class="btn btn-primary" href="/#/movie-add"><span class="glyphicon glyphicon-plus"></span>Add Movie</a>
+<br/>
 <!--
 <div ui-grid="gridOptions1" ui-grid-pagination class="grid"></div>
 -->
@@ -6,12 +8,19 @@
     <th>Title</th>
     <th>Description</th>
     <th>Category</th>
+    <th>Operations</th>
   </thead>
   <tbody>
     <tr ng-repeat="movie in movieList">
-      <td>{{ movie.title }}</td>
+      <td><a ng-href="/#/movie-view/{{ movie._id }}">{{ movie.title }}</a></td>
       <td>{{ movie.description }}</td>
       <td>{{ movie.category }}</td>
+      <td>
+        <div class="button-group">
+          <a ng-href="/#/movie-edit/{{ movie._id }}" class="btn btn-default"><span class="glyphicon glyphicon-edit"></span></a>
+          <a ng-href="/#/movie-delete/{{ movie._id }}" class="btn btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
+        </div>
+      </td>
     </tr>
   </tbody>
 </table>

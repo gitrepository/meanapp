@@ -100,8 +100,10 @@ RTB10
 #23 Create Route: (Movies Route) inside client folder
 	yo angular:route movies
 
+
 RTB11
 #24 Basic App with Movie MVC. Not connected to Service yet.
+
 
 RTB12
 #25 Hooking up Client to Server (View Movie List)
@@ -120,5 +122,13 @@ RTB13: Code Cleanup
 	add (if not added) bower_components/angular-ui-router/release/angular-ui-router.js
 
 
+RTB14
+#31 Adding other MOVIE CRUD routes: movie-add, movie-view, movie-update, movie-delete
+	yo angular:route movie-add 
+		(1)movie-add.html	: view file
+		(2)movie-add.js		: controller
+		(3)app.js					: create a route for ADD /movie-add
+		
+	
 
 
