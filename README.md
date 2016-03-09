@@ -129,7 +129,7 @@ RTB14: COMPETE CRUD
 		(1)movie-add.html	: view file
 		(2)movie-add.js		: controller (Movie-AddCtrl)
 		(3)app.js					: create a route for ADD /movie-add
-		
 	
-
-
+RTB15
+#33 Angular Directive: Directive provides the ability to create new HTML elements/tags etc.
+	<youtube> directive to play videos (not just you-tube)
